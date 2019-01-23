@@ -1,6 +1,6 @@
 # UDEV
 
-## Online [DEMO](https://uros2929.github.io/UDEV/about) version
+## Online [DEMO](https://uros2929.github.io/UDEV/) version
 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
