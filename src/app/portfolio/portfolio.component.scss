@@ -17,7 +17,11 @@
        }
    }
 }
-
+.card-img-top{
+    background-image: url('../../assets/images/OSPangular.png');
+    background-size: cover;
+    height: 200px;
+}
 
 @keyframes portfolioAnimation{
     0%{
