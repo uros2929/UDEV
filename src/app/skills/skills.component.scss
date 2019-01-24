@@ -1,5 +1,4 @@
 .skills{
-    overflow: hidden;
     height: 800px;
     position: absolute;
     text-align: center;
@@ -7,3 +6,89 @@
     z-index: 1;
     width: 100%;
 }
+.skillMeter{
+    margin: 2% auto;
+    height: 700px;
+    width: 50%;
+}
+.skillScaleHTML{
+    height: 100px;
+    width: 100%;
+    h3{
+        position: relative;
+        float: left;
+    }
+    h4{
+        position: relative;
+        float: right;
+    }
+    .scalePerHTML{
+        border: 3px solid blue;
+        background: black;
+        top: 50%;
+        height: 30px;
+        position: relative;
+        width: 1%;
+    }
+}
+.skillScaleJS{
+    height: 100px;
+    width: 100%;
+    h3{
+        position: relative;
+        float: left;
+    }
+    h4{
+        position: relative;
+        float: right;
+    }
+    .scalePerJS{
+        border: 3px solid yellow;
+        background: black;
+        top: 50%;
+        height: 30px;
+        position: relative;
+        width: 1%;
+    }
+}
+.skillScaleAngular{
+    height: 100px;
+    width: 100%;
+    h3{
+        position: relative;
+        float: left;
+    }
+    h4{
+        position: relative;
+        float: right;
+    }
+    .scalePerAngular{
+        border: 3px solid red;
+        background: black;
+        top: 50%;
+        height: 30px;
+        position: relative;
+        width: 1%;
+    }
+}
+.skillScaleBootstrap{
+    height: 100px;
+    width: 100%;
+    h3{
+        position: relative;
+        float: left;
+    }
+    h4{
+        position: relative;
+        float: right;
+    }
+    .scalePerBootstrap{
+        border: 3px solid purple;
+        background: black;
+        top: 50%;
+        height: 30px;
+        position: relative;
+        width: 1%;
+    }
+}
+
