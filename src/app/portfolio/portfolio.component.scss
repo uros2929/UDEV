@@ -17,10 +17,40 @@
        }
    }
 }
-.card-img-top{
+.card-img-topOSPangular{
     background-image: url('../../assets/images/OSPangular.png');
     background-size: cover;
     height: 200px;
+}
+.card-img-topOSPelectron1{
+    background-image: url('../../assets/images/OSPelectron1.png');
+    background-size: cover;
+    height: 200px;
+}
+.card-img-topTypingSpeed{
+    background-image: url('../../assets/images/typingSpeed.png');
+    background-size: cover;
+    height: 200px;
+}
+.card-img-topMines{
+    background-image: url('../../assets/images/mines.png');
+    background-size: cover;
+    height: 200px; 
+}
+.card-img-topXO{
+    background-image: url('../../assets/images/XO.png');
+    background-size: cover;
+    height: 200px; 
+}
+.card-img-topCaffe{
+    background-image: url('../../assets/images/caffe.png');
+    background-size: cover;
+    height: 200px; 
+}
+.card-img-topGitAcc{
+    background-image: url('../../assets/images/GITacc.png');
+    background-size: cover;
+    height: 200px;  
 }
 
 @keyframes portfolioAnimation{
