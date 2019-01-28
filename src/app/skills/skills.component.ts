@@ -8,27 +8,29 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsComponent implements OnInit {
 
   widthHTML = 1;
-  widthJS=1;
-  widthAngular=1;
-  widthBootstrap=1;
- 
+  widthJS = 1;
+  widthAngular = 1;
+  widthBootstrap = 1;
+  JQuery = 1;
+
   constructor() { }
 
   ngOnInit() {
-   this.moveBar('scalePerHTML',95,this.widthHTML);
-   this.moveBar('scalePerJS',90,this.widthJS);
-   this.moveBar('scalePerAngular',70,this.widthAngular);
-   this.moveBar('scalePerBootstrap',85,this.widthBootstrap);
+    this.moveBar('scalePerHTML', 95, this.widthHTML);
+    this.moveBar('scalePerJS', 90, this.widthJS);
+    this.moveBar('scalePerAngular', 70, this.widthAngular);
+    this.moveBar('scalePerBootstrap', 85, this.widthBootstrap);
+    this.moveBar('skillPerJQuery', 55, this.JQuery)
   }
 
-  moveBar(id,widthPer,widthLang){
-    let setINTH=setInterval(()=>{
+  moveBar(id, widthPer, widthLang) {
+    let setINTH = setInterval(() => {
       widthLang++;
-      document.getElementById(id).style.width=widthLang+'%';
-      if (widthLang==widthPer) {
+      document.getElementById(id).style.width = widthLang + '%';
+      if (widthLang == widthPer) {
         clearInterval(setINTH)
       }
-    },8)
+    }, 8)
   }
 
 }

@@ -91,6 +91,28 @@
         width: 1%;
     }
 }
+.skillScaleJQuery{
+    height: 100px;
+    width: 100%;
+    h3{
+        position: relative;
+        float: left;
+    }
+    h4{
+        position: relative;
+        float: right;
+    }
+    .skillPerJQuery{
+        border: 3px solid orange;
+        background: black;
+        top: 50%;
+        height: 30px;
+        position: relative;
+        width: 1%;
+    }
+}
+
+
 
 @media only screen and (max-width:570px){
     .skillMeter{
