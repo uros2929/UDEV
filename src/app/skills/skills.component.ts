@@ -16,10 +16,10 @@ export class SkillsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.moveBar('scalePerHTML', 95, this.widthHTML);
-    this.moveBar('scalePerJS', 90, this.widthJS);
+    this.moveBar('scalePerHTML', 90, this.widthHTML);
+    this.moveBar('scalePerJS', 80, this.widthJS);
     this.moveBar('scalePerAngular', 70, this.widthAngular);
-    this.moveBar('scalePerBootstrap', 85, this.widthBootstrap);
+    this.moveBar('scalePerBootstrap', 80, this.widthBootstrap);
     this.moveBar('skillPerJQuery', 55, this.JQuery)
   }
 
