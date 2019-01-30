@@ -52,6 +52,61 @@
     background-size: cover;
     height: 200px;  
 }
+.card-img-topOSPangular:hover,.card-img-topOSPelectron1:hover,.card-img-topTypingSpeed:hover,.card-img-topMines:hover,.card-img-topXO:hover,.card-img-topCaffe:hover,.card-img-topGitAcc:hover{
+    transform: scale(1.2)
+}
+
+.modalShowImg{
+    background-color: white;
+    display: none;
+    height: 480px;
+    position: fixed;
+    top: 30%;
+    left: 15%;
+    z-index: 2;
+}
+.closeModalButton{
+    cursor: pointer;
+    float: right;
+    font-size: 24px;
+    margin-right: 2%;
+    position: relative;
+}
+.closeModalButton:hover{
+transform: scale(1.2)
+}
+.showImg{
+    background-size:     contain;                   
+    background-repeat:   no-repeat;
+    background-position: center center; 
+    height: 100%;
+    width: 100%;
+}
+.prevImg{
+    align-items: center;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    font-size: 50px;
+    height: 500px;
+    position: relative;
+    float: left;
+    width: 10%;
+}
+.nextImg{
+    align-items: center;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 50px;
+    height: 500px;
+    position: relative;
+    float: right;
+    width: 10%;
+}
+
 
 @keyframes portfolioAnimation{
     0%{

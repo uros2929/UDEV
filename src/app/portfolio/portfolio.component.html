@@ -1,6 +1,6 @@
 <div class="container-fluid portfolio">
   <div class="card portfolioCard">
-    <div class="card-img-topOSPangular"></div>
+    <div class="card-img-topOSPangular" (click)='imgsModalShow($event)'></div>
     <!-- <img src="../../assets/images/OSPangular.png" class="card-img-top" alt="IMG"> -->
      <div class="card-body">
       <h3 class="card-title">OSPbyUM</h3>
@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="card portfolioCard">
-      <div class="card-img-topOSPelectron1"></div>
+      <div class="card-img-topOSPelectron1" (click)='imgsModalShow($event)'></div>
     <!-- <img src="../../assets/images/OSPelectron1.png" class="card-img-top" alt="IMG"> -->
     <div class="card-body">
       <h3 class="card-title">OSPbyUM2</h3>
@@ -22,7 +22,7 @@
     </div>
   </div>
   <div class="card portfolioCard">
-      <div class="card-img-topTypingSpeed"></div>
+      <div class="card-img-topTypingSpeed" (click)='imgsModalShow($event)'></div>
     <!-- <img src="../../assets/images/typingSpeed.png" class="card-img-top" alt="IMG"> -->
     <div class="card-body">
       <h3 class="card-title">TypingSpeed app</h3>
@@ -34,7 +34,7 @@
     </div>
   </div>
   <div class="card portfolioCard">
-      <div class="card-img-topMines"></div>
+      <div class="card-img-topMines" (click)='imgsModalShow($event)'></div>
     <!-- <img src="../../assets/images/mines.png" class="card-img-top" alt="IMG"> -->
     <div class="card-body">
       <h3 class="card-title">Minesweeper game</h3>
@@ -47,7 +47,7 @@
     </div>
   </div>
   <div class="card portfolioCard">
-      <div class="card-img-topXO"></div>
+      <div class="card-img-topXO" (click)='imgsModalShow($event)'></div>
     <!-- <img src="../../assets/images/XO.png" class="card-img-top" alt="IMG"> -->
     <div class="card-body">
       <h3 class="card-title">Tic-Tac-Toe game</h3>
@@ -60,7 +60,7 @@
     </div>
   </div>
   <div class="card portfolioCard">
-      <div class="card-img-topCaffe"></div>
+      <div class="card-img-topCaffe" (click)='imgsModalShow($event)'></div>
     <!-- <img src="../../assets/images/caffe.png" class="card-img-top" alt="IMG"> -->
     <div class="card-body">
       <h3 class="card-title">CaffeApp</h3>
@@ -72,7 +72,7 @@
     </div>
   </div>
   <div class="card portfolioCard">
-      <div class="card-img-topGitAcc"></div>
+      <div class="card-img-topGitAcc" (click)='imgsModalShow($event)'></div>
     <!-- <img src="../../assets/images/GITacc.png" class="card-img-top" alt="IMG"> -->
     <div class="card-body">
       <h3 class="card-title">GitHub Acount Info</h3>
@@ -83,3 +83,10 @@
     </div>
   </div>
 </div>
+<div class="container modalShowImg" id="modalShowImg">
+    <div class="closeModalButton" (click)="closeModalShowImgs()">X</div>
+    <div class="container showImg" id="showImg">
+      <div class="prevImg" id="prevImg">&#8249;</div>
+      <div class="nextImg" id="nextImg">&#8250;</div>
+    </div>
+  </div>
