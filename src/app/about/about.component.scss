@@ -1,10 +1,11 @@
 .about{
+    animation: aboutAnimation 0.9s;
     background-color: rgb(63,63,63);
     height: inherit;
     position: absolute;
     top: 10%;
     width: 100%;
-    animation: aboutAnimation 0.9s;
+  
 }
 .aboutMe-1{
     background-image: url("../../assets/images/4K-Black-Pics.jpg");
@@ -26,8 +27,13 @@
     min-height: 810px;
     position: relative;
     text-align: center;
+    h1{
+        font-family: cursive;
+    }
+  
     p{
       text-align: justify;
+      font-family: cursive;
     }
     a{
         border: 2px solid black;
@@ -42,20 +48,31 @@
         background-color: black;
         color: white;
     }
-    // .imageCont{
-    //     border: 1px solid black;
-    //     float: left;
-    //     height: 400px;
-    //     position: relative;
-    //     width: 30%;
-    // }
     .paragraphCont{
-        margin-top: 3%;
+        margin-top: 5%;
         position: relative;
         float: right;
     
     }
+    .imgSkills{
+        height: 200px;
+        position: relative;
+        img{
+            margin-top: 5%;
+            max-width: 100px;
+            max-height: 100px;
+        }
+     
+    }
+    .htmlLogo,.cssLogo{
+        animation: slide-right 1.5s linear ;
+    }
+    .jsLogo,.angularLogo{
+        animation: slide-left 1.5s linear ;
+    }
+ 
 }
+
 .aboutMe-3-10x{
     background-color: #eee;
     height: 400px;
@@ -69,12 +86,15 @@
         }
         .fa-facebook-square:hover,.fa-linkedin:hover{
             color: blue;
+            animation: spin 0.5s linear; 
         }
         .fa-instagram:hover,.fa-envelope:hover{
-            color: rgb(205, 72 , 107)
+            color: rgb(205, 72 , 107);
+            animation: spin 0.5s linear; 
         }
         .fa-github:hover{
-            color: rgb(138, 58, 185)
+            color: rgb(138, 58, 185);
+            animation: spin 0.5s linear; 
         }
     }
 }
@@ -104,15 +124,43 @@
 
 
 
- @keyframes aboutAnimation{
+@keyframes aboutAnimation{
      0%{
         transform: scaleY(0.1)
         }
      100%{
-        transform: scaleY(1)
+        transform: scaleY(1);
         }
     }
 
+@keyframes slide-right{
+    0%{
+        transform: translateX(-300px) scale(0.3) rotate(0)
+     
+    }
+    100%{
+        transform: translateX(0) scale(1.5) rotate(360deg)
+    }
+}
+
+@keyframes slide-left{
+    0%{
+        transform: translateX(+300px) scale(0.3) rotate(0)
+    }
+    100%{
+        transform: translateX(0) scale(1.5) rotate(360deg)
+    }
+}
+
+ @keyframes spin{
+     100%{
+         -webkit-transform: rotate(360deg);
+         transform: rotate(360deg);
+     }
+ }   
+  
+
+  
 @media only screen and (max-width:1000px){
 .aboutMe-3-10x{
     display: none;

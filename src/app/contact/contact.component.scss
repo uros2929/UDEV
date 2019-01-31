@@ -2,7 +2,7 @@
     height: 800px;
     position: absolute;
     text-align: center;
-    top: 10%;
+    top: 5%;
     z-index: 1;
     width: 100%;
     animation: contactAnimation 0.7s;
@@ -20,9 +20,11 @@
     }
     .fa-facebook-square:hover{
         color: blue;
+        animation: spin .5s linear;
     }
     .fa-instagram:hover,.fa-envelope:hover{
-        color: rgb(205, 72 , 107)
+        color: rgb(205, 72 , 107);
+        animation: spin .5s linear;
     }
     
 }
@@ -35,4 +37,13 @@
     100%{
         filter: blur(0)
     }
+}
+
+@keyframes spin{
+0%{
+    transform: rotate(0)
+}
+100%{
+    transform: rotate(360deg)
+}
 }

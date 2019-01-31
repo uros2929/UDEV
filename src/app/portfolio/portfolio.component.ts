@@ -58,13 +58,19 @@ export class PortfolioComponent implements OnInit {
     document.getElementById('nextImg').addEventListener('click', () => {
       this.indexForObj++;
       document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
-      console.log(this.indexForObj)
+      if (this.indexForObj == obj.length) {
+        this.indexForObj = 0;
+        document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
+      }
 
     })
     document.getElementById('prevImg').addEventListener('click', () => {
       this.indexForObj--;
       document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
-      console.log(this.indexForObj)
+      if (this.indexForObj < 0) {
+      this.indexForObj=obj.length-1;
+      document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
+      }
 
     })
   }
@@ -72,24 +78,7 @@ export class PortfolioComponent implements OnInit {
   closeModalShowImgs() {
     document.getElementById('modalShowImg').style.display = 'none';
     this.indexForObj = 0;
-    location.reload();
+    location.reload(); // NEED TO CHNAGE !!!!
   }
 
-  // imgMinus(obj: any) {
-  //   document.getElementById('prevImg').addEventListener('click', () => {
-  //     this.indexForObj--;
-  //     document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
-  //     console.log(this.indexForObj)
-
-  //   })
-  // }
-  // imgPlus(obj: any) {
-  //   document.getElementById('nextImg').addEventListener('click', () => {
-  //     this.indexForObj++;
-  //     document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
-  //     console.log(this.indexForObj)
-
-  //   })
-
-  // }
 }
