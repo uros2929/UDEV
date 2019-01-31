@@ -12,7 +12,7 @@ export class PortfolioComponent implements OnInit {
   allImgCards = document.getElementsByClassName('portfolio');
   indexForObj = 0;
   imgObject = {
-    ospAngular: ['OSPangular.png', 'OSPangular2.png'],
+    ospAngular: ['OSPangular.png', 'OSPangular2.png','OSPangular3.png','OSPangular4.png','OSPangular5.png','OSPangular6.png','OSPangular7.png','OSPangular8.png'],
     ospElectron: ['OSPelectron1.png'],
     typingSpeed: ['typingSpeed.png'],
     minesWeeper: ['mines.png'],
@@ -80,9 +80,7 @@ export class PortfolioComponent implements OnInit {
     location.reload(); // NEED TO CHNAGE !!!!
   }
 
-}
-
-// FOR LOCAL
+  // FOR LOCAL
   // chooseImg(obj: any[]) {
   //   document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
 
@@ -105,3 +103,5 @@ export class PortfolioComponent implements OnInit {
 
   //   })
   // }
+}
+
