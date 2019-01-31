@@ -51,52 +51,28 @@ export class PortfolioComponent implements OnInit {
       this.chooseImg(this.imgObject.gitHubAcc)
     }
   }
-
   chooseImg(obj: any[]) {
-    document.getElementById('showImg').style.backgroundImage = "url('./assets/images/" + obj[this.indexForObj] + "')";
+    document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
 
     document.getElementById('nextImg').addEventListener('click', () => {
       this.indexForObj++;
-      document.getElementById('showImg').style.backgroundImage = "url('./assets/images/" + obj[this.indexForObj] + "')";
+      document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
       if (this.indexForObj == obj.length) {
         this.indexForObj = 0;
-        document.getElementById('showImg').style.backgroundImage = "url('./assets/images/" + obj[this.indexForObj] + "')";
+        document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
       }
 
     })
     document.getElementById('prevImg').addEventListener('click', () => {
       this.indexForObj--;
-      document.getElementById('showImg').style.backgroundImage = "url('./assets/images/" + obj[this.indexForObj] + "')";
+      document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
       if (this.indexForObj < 0) {
       this.indexForObj=obj.length-1;
-      document.getElementById('showImg').style.backgroundImage = "url('./assets/images/" + obj[this.indexForObj] + "')";
+      document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
       }
 
     })
   }
-  // FOR LOCAL
-  // chooseImg(obj: any[]) {
-  //   document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
-
-  //   document.getElementById('nextImg').addEventListener('click', () => {
-  //     this.indexForObj++;
-  //     document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
-  //     if (this.indexForObj == obj.length) {
-  //       this.indexForObj = 0;
-  //       document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
-  //     }
-
-  //   })
-  //   document.getElementById('prevImg').addEventListener('click', () => {
-  //     this.indexForObj--;
-  //     document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
-  //     if (this.indexForObj < 0) {
-  //     this.indexForObj=obj.length-1;
-  //     document.getElementById('showImg').style.backgroundImage = "url('../../assets/images/" + obj[this.indexForObj] + "')";
-  //     }
-
-  //   })
-  // }
 
   closeModalShowImgs() {
     document.getElementById('modalShowImg').style.display = 'none';
