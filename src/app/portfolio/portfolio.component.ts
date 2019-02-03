@@ -18,7 +18,8 @@ export class PortfolioComponent implements OnInit {
     minesWeeper: ['mines.png'],
     ticTacToe: ['XO.png'],
     caffeApp: ['caffe.png'],
-    gitHubAcc: ['GITacc.png']
+    gitHubAcc: ['GITacc.png'],
+    udevRestaurant:['UDEVrestaurant.png']
   }
 
 
@@ -49,6 +50,8 @@ export class PortfolioComponent implements OnInit {
       this.chooseImg(this.imgObject.caffeApp)
     } else if (findedImgCard == 'card-img-topGitAcc') {
       this.chooseImg(this.imgObject.gitHubAcc)
+    }else if (findedImgCard == 'card-img-topUdevRestaurant') {
+      this.chooseImg(this.imgObject.udevRestaurant)
     }
   }
   chooseImg(obj: any[]) {
