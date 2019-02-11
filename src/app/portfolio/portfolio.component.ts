@@ -19,7 +19,8 @@ export class PortfolioComponent implements OnInit {
     ticTacToe: ['XO.png'],
     caffeApp: ['caffe.png'],
     gitHubAcc: ['GITacc.png'],
-    udevRestaurant:['UDEVrestaurant.png']
+    udevRestaurant:['UDEVrestaurant.png'],
+    udevShop:['UDEVshop.png']
   }
 
 
@@ -51,6 +52,8 @@ export class PortfolioComponent implements OnInit {
     } else if (findedImgCard == 'card-img-topGitAcc') {
       this.chooseImg(this.imgObject.gitHubAcc)
     }else if (findedImgCard == 'card-img-topUdevRestaurant') {
+      this.chooseImg(this.imgObject.udevRestaurant)
+    }else if (findedImgCard == 'card-img-topUDEVshop') {
       this.chooseImg(this.imgObject.udevRestaurant)
     }
   }

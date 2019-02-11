@@ -12,6 +12,7 @@ export class SkillsComponent implements OnInit {
   widthAngular = 1;
   widthBootstrap = 1;
   JQuery = 1;
+  git = 1;
 
   constructor() { }
 
@@ -20,7 +21,8 @@ export class SkillsComponent implements OnInit {
     this.moveBar('scalePerJS', 80, this.widthJS);
     this.moveBar('scalePerAngular', 70, this.widthAngular);
     this.moveBar('scalePerBootstrap', 80, this.widthBootstrap);
-    this.moveBar('skillPerJQuery', 55, this.JQuery)
+    this.moveBar('skillPerJQuery', 55, this.JQuery);
+    this.moveBar('skillPerGit', 70, this.git);
   }
 
   moveBar(id, widthPer, widthLang) {

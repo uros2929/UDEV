@@ -111,7 +111,26 @@
         width: 1%;
     }
 }
-
+.skillScaleGit{
+    height: 100px;
+    width: 100%;
+    h3{
+        position: relative;
+        float: left;
+    }
+    h4{
+        position: relative;
+        float: right;
+    }
+    .skillPerGit{
+        border: 3px solid palevioletred;
+        background: black;
+        top: 50%;
+        height: 30px;
+        position: relative;
+        width: 1%;
+    } 
+}
 
 
 @media only screen and (max-width:570px){
