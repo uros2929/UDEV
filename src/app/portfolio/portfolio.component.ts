@@ -54,7 +54,7 @@ export class PortfolioComponent implements OnInit {
     }else if (findedImgCard == 'card-img-topUdevRestaurant') {
       this.chooseImg(this.imgObject.udevRestaurant)
     }else if (findedImgCard == 'card-img-topUDEVshop') {
-      this.chooseImg(this.imgObject.udevRestaurant)
+      this.chooseImg(this.imgObject.udevShop)
     }
   }
   chooseImg(obj: any[]) {
