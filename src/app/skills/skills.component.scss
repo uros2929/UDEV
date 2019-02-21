@@ -131,6 +131,26 @@
         width: 1%;
     } 
 }
+.skillScaleSQL{
+    height: 100px;
+    width: 100%;
+    h3{
+        position: relative;
+        float: left;
+    }
+    h4{
+        position: relative;
+        float: right;
+    }
+    .skillPerSQL{
+        border: 3px solid  rgb(46, 219, 205);
+        background: black;
+        top: 50%;
+        height: 30px;
+        position: relative;
+        width: 1%;
+    } 
+}
 
 
 @media only screen and (max-width:570px){

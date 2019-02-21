@@ -13,6 +13,7 @@ export class SkillsComponent implements OnInit {
   widthBootstrap = 1;
   JQuery = 1;
   git = 1;
+  sql = 1;
 
   constructor() { }
 
@@ -23,6 +24,7 @@ export class SkillsComponent implements OnInit {
     this.moveBar('scalePerBootstrap', 80, this.widthBootstrap);
     this.moveBar('skillPerJQuery', 55, this.JQuery);
     this.moveBar('skillPerGit', 70, this.git);
+    this.moveBar('skillPerSQL', 50, this.sql)
   }
 
   moveBar(id, widthPer, widthLang) {
