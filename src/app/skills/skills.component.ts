@@ -18,23 +18,23 @@ export class SkillsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.moveBar('scalePerHTML', 90, this.widthHTML);
-    this.moveBar('scalePerJS', 80, this.widthJS);
-    this.moveBar('scalePerAngular', 70, this.widthAngular);
-    this.moveBar('scalePerBootstrap', 80, this.widthBootstrap);
-    this.moveBar('skillPerJQuery', 55, this.JQuery);
-    this.moveBar('skillPerGit', 70, this.git);
-    this.moveBar('skillPerSQL', 50, this.sql)
+    // this.moveBar('scalePerHTML', 90, this.widthHTML);
+    // this.moveBar('scalePerJS', 80, this.widthJS);
+    // this.moveBar('scalePerAngular', 70, this.widthAngular);
+    // this.moveBar('scalePerBootstrap', 80, this.widthBootstrap);
+    // this.moveBar('skillPerJQuery', 55, this.JQuery);
+    // this.moveBar('skillPerGit', 70, this.git);
+    // this.moveBar('skillPerSQL', 50, this.sql);
   }
 
   moveBar(id, widthPer, widthLang) {
-    let setINTH = setInterval(() => {
+    const setINTH = setInterval(() => {
       widthLang++;
       document.getElementById(id).style.width = widthLang + '%';
-      if (widthLang == widthPer) {
-        clearInterval(setINTH)
+      if (widthLang === widthPer) {
+        clearInterval(setINTH);
       }
-    }, 8)
+    }, 8);
   }
 
 }
