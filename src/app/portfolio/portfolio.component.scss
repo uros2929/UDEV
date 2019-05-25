@@ -17,50 +17,53 @@
        }
    }
 }
+p, a {
+  font-size: 16px;
+}
 .card-img-topOSPangular{
-    background-image: url('../../assets/images/OSPangular.png');
+    background-image: url('/assets/images/OSPangular.png');
     background-size: cover;
-    height: 200px;
+    min-height: 200px;
 }
 .card-img-topOSPelectron1{
-    background-image: url('../../assets/images/OSPelectron1.png');
+    background-image: url('/assets/images/OSPelectron1.png');
     background-size: cover;
-    height: 200px;
+    min-height: 200px;
 }
 .card-img-topTypingSpeed{
-    background-image: url('../../assets/images/typingSpeed.png');
+    background-image: url('/assets/images/typingSpeed.png');
     background-size: cover;
-    height: 200px;
+    min-height: 200px;
 }
 .card-img-topMines{
-    background-image: url('../../assets/images/mines.png');
+    background-image: url('/assets/images/mines.png');
     background-size: cover;
-    height: 200px; 
+    min-height: 200px;
 }
 .card-img-topXO{
-    background-image: url('../../assets/images/XO.png');
+    background-image: url('/assets/images/XO.png');
     background-size: cover;
-    height: 200px; 
+    min-height: 200px;
 }
 .card-img-topCaffe{
-    background-image: url('../../assets/images/caffe.png');
+    background-image: url('/assets/images/caffe.png');
     background-size: cover;
-    height: 200px; 
+    min-height: 200px;
 }
 .card-img-topGitAcc{
-    background-image: url('../../assets/images/GITacc.png');
+    background-image: url('/assets/images/GITacc.png');
     background-size: cover;
-    height: 200px;  
+    min-height: 200px;
 }
 .card-img-topUdevRestaurant{
-    background-image: url('../../assets/images/UDEVrestaurant.png');
+    background-image: url('/assets/images/UDEVrestaurant.png');
     background-size: cover;
-    height: 200px;   
+    min-height: 200px;
 }
 .card-img-topUDEVshop{
-    background-image: url('../../assets/images/UDEVshop.png');
+    background-image: url('/assets/images/UDEVshop.png');
     background-size: cover;
-    height: 200px;    
+    min-height: 200px;
 }
 .card-img-topOSPangular:hover,.card-img-topOSPelectron1:hover,.card-img-topTypingSpeed:hover,.card-img-topMines:hover,.card-img-topXO:hover,.card-img-topCaffe:hover,.card-img-topGitAcc:hover,.card-img-topUdevRestaurant:hover,.card-img-topUDEVshop:hover{
     cursor: pointer;
