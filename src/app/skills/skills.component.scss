@@ -3,14 +3,15 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
 }
 .skillsLogo {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 50%;
+  position: absolute;
+  top: 15%;
+  width: 80%;
   div {
     margin: 25px;
   }
@@ -57,155 +58,8 @@
     background-size: cover;
   }
 }
-//.skillMeter{
-//    margin: 2% auto;
-//    height: 700px;
-//    width: 50%;
-//}
-//.skillScaleHTML{
-//    height: 100px;
-//    width: 100%;
-//    h3{
-//        position: relative;
-//        float: left;
-//    }
-//    h4{
-//        position: relative;
-//        float: right;
-//    }
-//    .scalePerHTML{
-//        border: 3px solid blue;
-//        background: black;
-//        top: 50%;
-//        height: 30px;
-//        position: relative;
-//        width: 1%;
-//    }
-//}
-//.skillScaleJS{
-//    height: 100px;
-//    width: 100%;
-//    h3{
-//        position: relative;
-//        float: left;
-//    }
-//    h4{
-//        position: relative;
-//        float: right;
-//    }
-//    .scalePerJS{
-//        border: 3px solid yellow;
-//        background: black;
-//        top: 50%;
-//        height: 30px;
-//        position: relative;
-//        width: 1%;
-//    }
-//}
-//.skillScaleAngular{
-//    height: 100px;
-//    width: 100%;
-//    h3{
-//        position: relative;
-//        float: left;
-//    }
-//    h4{
-//        position: relative;
-//        float: right;
-//    }
-//    .scalePerAngular{
-//        border: 3px solid red;
-//        background: black;
-//        top: 50%;
-//        height: 30px;
-//        position: relative;
-//        width: 1%;
-//    }
-//}
-//.skillScaleBootstrap{
-//    height: 100px;
-//    width: 100%;
-//    h3{
-//        position: relative;
-//        float: left;
-//    }
-//    h4{
-//        position: relative;
-//        float: right;
-//    }
-//    .scalePerBootstrap{
-//        border: 3px solid purple;
-//        background: black;
-//        top: 50%;
-//        height: 30px;
-//        position: relative;
-//        width: 1%;
-//    }
-//}
-//.skillScaleJQuery{
-//    height: 100px;
-//    width: 100%;
-//    h3{
-//        position: relative;
-//        float: left;
-//    }
-//    h4{
-//        position: relative;
-//        float: right;
-//    }
-//    .skillPerJQuery{
-//        border: 3px solid orange;
-//        background: black;
-//        top: 50%;
-//        height: 30px;
-//        position: relative;
-//        width: 1%;
-//    }
-//}
-//.skillScaleGit{
-//    height: 100px;
-//    width: 100%;
-//    h3{
-//        position: relative;
-//        float: left;
-//    }
-//    h4{
-//        position: relative;
-//        float: right;
-//    }
-//    .skillPerGit{
-//        border: 3px solid palevioletred;
-//        background: black;
-//        top: 50%;
-//        height: 30px;
-//        position: relative;
-//        width: 1%;
-//    }
-//}
-//.skillScaleSQL{
-//    height: 100px;
-//    width: 100%;
-//    h3{
-//        position: relative;
-//        float: left;
-//    }
-//    h4{
-//        position: relative;
-//        float: right;
-//    }
-//    .skillPerSQL{
-//        border: 3px solid  rgb(46, 219, 205);
-//        background: black;
-//        top: 50%;
-//        height: 30px;
-//        position: relative;
-//        width: 1%;
-//    }
-//}
-//
-//
-//@media only screen and (max-width:570px){
-//    .skillMeter{
-//        width: 90%;
-//    }
-//}
+@media only screen and (max-width:570px) {
+  .htmlLogo, .phpLogo, .mySqlLogo, .ionicLogo, .angularLogo, .jsLogo, .cssLogo {
+    height: 150px;
+  }
+}
