@@ -53,10 +53,10 @@
 
 .hamMenuOpen{
     display: none;
-    background-color:silver;
+    background-color: silver;
     height: 1400px;
     opacity: 0.9;
-    position: relative;
+    position: fixed;
     z-index: 1001;
     width: 100%;
    a{
@@ -74,6 +74,7 @@
     background-color:black;
     height: 400px;
     margin: auto;
+    padding: 15px;
     opacity: 1;
     position: relative;
     text-align: center;
